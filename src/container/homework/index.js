@@ -1,8 +1,9 @@
 import {
     createElement,
     createHeader,
-    createPosts,
 } from '../../script/layout'
+
+import { createCommunity } from '../../script/homework'
 
 const main = document.querySelector('.main')
 
@@ -10,11 +11,10 @@ const header = createHeader()
 
 main.append(header)
 
-const title = createElement('h1', 'title', 'Мій блог')
+const title = createElement('h1', 'title', "Ком'юніті")
 
 main.append(title)
 
-const postSection = createPosts()
+const communitySection = createCommunity()
 
-main.append(postSection)
-
+main.append(communitySection)
